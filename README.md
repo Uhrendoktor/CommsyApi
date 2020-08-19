@@ -7,12 +7,12 @@ Sample:\
 \
 CommsyClient client = new CommsyClient();\
 try{\
-  client.login(username, password);\
-  System.out.println(String.format("Logged in: SID:%s PHPSESSID:%s UID:%s", client.SID, client.PHPSESSID, client.UID));\
+&nbsp;&nbsp;&nbsp;&nbsp;client.login(username, password);\
+&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(String.format("Logged in: SID:%s PHPSESSID:%s UID:%s", client.SID, client.PHPSESSID, client.UID));\
 }catch(CommsyInvalidLoginDataException e){\
-  //Handle invalid login\
+&nbsp;&nbsp;&nbsp;&nbsp;//Handle invalid login\
 }catch(CommsyServerErrorException e){\
-  //Handle Server error\
+&nbsp;&nbsp;&nbsp;&nbsp;//Handle Server error\
 }\
 \
 DashboardRoom dashboard = client.rooms.get("Dashboard");\
